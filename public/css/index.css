@@ -1,0 +1,25 @@
+
+header {
+  background: url("https://firebasestorage.googleapis.com/v0/b/firma-2a216.appspot.com/o/img%2Fblur6.jpg?alt=media&token=339149da-af9d-429b-8692-9889cd2a89fc");
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+}
+.section {
+  padding-top: 4vw;
+  padding-bottom: 4vw; 
+}
+.tabs .indicator {
+  background-color: #1a327e;
+}
+.tabs .tab a:focus, .tabs .tab a:focus.active {
+  background: transparent;
+}
+@media screen and (max-width: 670px) {
+  header{
+    min-height: 500px;
+  }
+}
+ 
+ 
+  

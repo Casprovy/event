@@ -1,0 +1,298 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="./css/timer.css">
+  <link rel="stylesheet" type="text/css" href="./css/modal.css">
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <title>My event</title>
+  
+</head>
+<body>
+
+  <!-- navbar -->
+  <header>
+      <nav class="nav-wrapper transparent">
+        <div class="container" id="top">
+        
+        <a href="#!" class="brand-logo">Your Event</a>
+    
+        <a href="" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#photos">Main</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="" class="tooltipped btn-floating btn-medium indigo lighten-1" data-tooltip="LinkedIn" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a></li>
+          <li><a href="" class="tooltipped btn-floating btn-medium indigo lighten-1" data-tooltip="Facebook" target="_blank">
+              <i class="fab fa-facebook"></i>
+          </a></li>
+          <li><a href="" class="tooltipped btn-floating btn-medium indigo lighten-1" data-tooltip="Twitter" target="_blank">
+              <i class="fab fa-twitter"></i>
+          </a></li>
+        </ul>
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+            <li><a href="#photos">Main</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        </div>
+      </nav>
+        
+    <!-- photo / grid -->
+
+  <div class="container center section">
+      <!-- <h3 class="center white-text">Event starts in:</h3> -->
+    <div class="row">
+      <div class="col s12 l12">
+
+    <div class="clock timer" id="clockdiv">
+
+        <div>
+          <span class="days"></span>
+          <div class="smalltext">days</div>
+        </div>
+        <div>
+          <span class="hours"></span>
+          <div class="smalltext">hours</div>
+        </div>
+        <div>
+          <span class="minutes"></span>
+          <div class="smalltext">minutes</div>
+        </div>
+        <div>
+          <span class="seconds"></span>
+          <div class="smalltext">seconds</div>
+        </div>
+      </div>
+          
+      </div>
+     </div>
+    </div>
+</header>
+  
+    <section class="container section scrollspy" id="photos">
+
+      <div class="row">
+        <div class="col s12 l4">
+          <img src="https://firebasestorage.googleapis.com/v0/b/firma-2a216.appspot.com/o/img%2Fportrait.jpg?alt=media&token=5eb2165c-fd64-406b-b7c7-92e8df6809d9" alt="" class="responsive-img materialboxed">
+        </div>
+        <div class="col s12 l6 offset-l1">
+          <h2 class="indigo-text text-darken-4">Portraits</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+        </div>
+      </div>
+
+      <div class="row">
+          <div class="col s12 l4 push-l7 offset-l1">
+            <img src="https://firebasestorage.googleapis.com/v0/b/firma-2a216.appspot.com/o/img%2Fcity.jpg?alt=media&token=e0c2f457-9b6c-4341-a95b-108e29f40bfe" alt="" class="responsive-img materialboxed">
+          </div>
+          <div class="col s12 l6 pull-l5 right-align offset-l1">
+            <h2 class="indigo-text text-darken-4">Cityscapes</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+          </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 l4">
+              <img src="https://firebasestorage.googleapis.com/v0/b/firma-2a216.appspot.com/o/img%2Fnature.jpg?alt=media&token=c2febce3-bc4f-490f-b1d4-7d44fe8aea55" alt="" class="responsive-img materialboxed">
+            </div>
+            <div class="col s12 l6 offset-l1">
+              <h2 class="indigo-text text-darken-4">Nature</h2>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+            </div>
+          </div>
+    </section>
+ 
+
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="https://firebasestorage.googleapis.com/v0/b/firma-2a216.appspot.com/o/img%2Fcodescreen.png?alt=media&token=9f64138c-63a1-4cb4-8a5c-e0c12427951c" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- services / tabs -->
+  <section class="container section scrollspy" id="services">
+    <div class="row">
+      <div class="col s12 l4">
+        <h2 class="indigo-trext text-darken-4">What I do...</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+      </div>
+      <div class="col s12 l6 offset-l2">
+        <ul class="tabs">
+          <li class="tab col s6">
+            <a href="#photography" class="indigo-text text-darken-4">Software</a>
+          </li>
+          <li class="tab col s6">
+              <a href="#editing" class="indigo-text text-darken-4">Hardware</a>
+            </li>
+        </ul>
+        <div class="col s12" id="photography">
+          <p class="flow-text indigo-text text-darken-4">Coding</p>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+        </div>
+        <div class="col s12" id="editing">
+            <p class="flow-text indigo-text text-darken-4">Finance</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- parallax -->
+  <div class="parallax-container">
+      <div class="parallax">
+        <img src="https://firebasestorage.googleapis.com/v0/b/firma-2a216.appspot.com/o/img%2Fprocess.jpg?alt=media&token=f74f09ea-0781-49a8-8984-71d25b2ec890" alt="" class="responsive-img">
+      </div>
+    </div>
+
+  <!-- contact form -->
+  <section class="container section scrollspy" >
+      <div class="d-none d-sm-block mb-5 pb-4 scrollspy" id="contact">
+        <div id="map" style="height: 480px;"></div>
+        <script src="./js/map.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap"></script>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section container scrollspy" >
+    <div class="row">
+      <div class="col s12 l5">
+        <h2 class="indigo-text text-darken-4">Register</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+      </div>
+
+    <!-- Modal Structure -->
+    <div id="confo1">
+      <div id="confo">
+      <div>
+        <p id="thankyou" class="center white-text">Thank you for registering!</p>
+        <p id="thankyou1" class="center white-text">Please check your inbox for the confirmation email.</p>
+      </div>
+      <div id="closeBtn" class="center">
+        <button class="waves-effect waves-green btn-flat">
+            <i class="material-icons white-text">close</i>
+        </button>
+      </div>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+
+
+      <div class="col s12 l5 offset-l2">
+        <form id="contactform" action="">
+          <div class="input-field">
+            <i class="material-icons prefix">email</i>
+            <input name="email" type="email" id="email">
+            <label for="email">your email</label>
+          </div>
+          <div class="input-field">
+              <i class="material-icons prefix">message</i>
+              <textarea name="message" id="message" class="materialize-textarea"></textarea>
+              <label for="message">your message</label>
+            </div>
+            <div class="input-field">
+              <p>Special service...</p>
+              <p>
+                <label>
+                  <input type="checkbox">
+                  <span>Wake-up call</span>
+                </label>
+              </p>
+              <p>
+                <label>
+                  <input type="checkbox">
+                  <span>Massage</span>
+                </label>
+              </p>
+            </div>
+            <div class="input-field center">
+                <button class="btn-large blue lighten-2 waves-effect waves-light" type="submit">Submit
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- listen to form -->
+  <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+  <script src="./js/firedb.js"> </script>
+
+
+ <!-- back to top button -->
+    <div class="fixed-action-btn">
+      <a href="#top" class="btn-floating btn-large blue lighten-3">
+        <i class="large material-icons">arrow_upward</i>
+      </a>
+    </div>
+ <!-- ! back to top button -->
+
+	<!-- ================ contact section end ================= -->
+
+ 
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l6">
+          <h5>About me</h5>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+        </div>
+        <div class="col s12 l4 offset-l2">
+          <h5>Connect</h5>
+          <ul>
+            <li><a href="#" class="grey-text text-lighten-3">Facebook0</a></li>
+            <li><a href="#" class="grey-text text-lighten-3">Facebook1</a></li>
+            <li><a href="#" class="grey-text text-lighten-3">Facebook2</a></li>
+            <li><a href="#" class="grey-text text-lighten-3">Facebook3</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container center-align">@copy</div>
+    </div>
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="./js/timer.js"></script>
+  
+  <script>
+    $(document).ready(function(){
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+      $('.fixed-action-btn').floatingActionButton();
+      $('.modal').modal();
+    });
+  </script>
+</body>
+</html>
+
