@@ -1,298 +1,265 @@
-<html lang="en">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- font awesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <!--Import Google Icon Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-  <link rel="stylesheet" type="text/css" href="./css/timer.css">
-  <link rel="stylesheet" type="text/css" href="./css/modal.css">
-  <link rel="stylesheet" type="text/css" href="./css/index.css">
-  <title>My event</title>
-  
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Agile development approach.</title>
+
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords"  content="" />
+	<meta name="Resource-type" content="" />
+
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Compiled and minified CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+
+	<link rel="stylesheet" type="text/css" href="./fullPage.js-master/dist/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="./fullPage.js-master/examples/examples.css" />
+	<link rel="stylesheet" type="text/css" href="./fullPage.js-master/examples/mouse.css" />
+
 </head>
 <body>
 
-  <!-- navbar -->
-  <header>
-      <nav class="nav-wrapper transparent">
-        <div class="container" id="top">
-        
-        <a href="#!" class="brand-logo">Your Event</a>
-    
-        <a href="" class="sidenav-trigger" data-target="mobile-menu">
-          <i class="material-icons">menu</i>
-        </a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="#photos">Main</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="" class="tooltipped btn-floating btn-medium indigo lighten-1" data-tooltip="LinkedIn" target="_blank">
-            <i class="fab fa-linkedin"></i>
-          </a></li>
-          <li><a href="" class="tooltipped btn-floating btn-medium indigo lighten-1" data-tooltip="Facebook" target="_blank">
-              <i class="fab fa-facebook"></i>
-          </a></li>
-          <li><a href="" class="tooltipped btn-floating btn-medium indigo lighten-1" data-tooltip="Twitter" target="_blank">
-              <i class="fab fa-twitter"></i>
-          </a></li>
-        </ul>
-        <ul class="sidenav grey lighten-2" id="mobile-menu">
-            <li><a href="#photos">Main</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        </div>
-      </nav>
-        
-    <!-- photo / grid -->
-
-  <div class="container center section">
-      <!-- <h3 class="center white-text">Event starts in:</h3> -->
-    <div class="row">
-      <div class="col s12 l12">
-
-    <div class="clock timer" id="clockdiv">
-
-        <div>
-          <span class="days"></span>
-          <div class="smalltext">days</div>
-        </div>
-        <div>
-          <span class="hours"></span>
-          <div class="smalltext">hours</div>
-        </div>
-        <div>
-          <span class="minutes"></span>
-          <div class="smalltext">minutes</div>
-        </div>
-        <div>
-          <span class="seconds"></span>
-          <div class="smalltext">seconds</div>
-        </div>
-      </div>
-          
-      </div>
-     </div>
-    </div>
-</header>
-  
-    <section class="container section scrollspy" id="photos">
-
-      <div class="row">
-        <div class="col s12 l4">
-          <img src="https://firebasestorage.googleapis.com/v0/b/firma-2a216.appspot.com/o/img%2Fportrait.jpg?alt=media&token=5eb2165c-fd64-406b-b7c7-92e8df6809d9" alt="" class="responsive-img materialboxed">
-        </div>
-        <div class="col s12 l6 offset-l1">
-          <h2 class="indigo-text text-darken-4">Portraits</h2>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-        </div>
-      </div>
-
-      <div class="row">
-          <div class="col s12 l4 push-l7 offset-l1">
-            <img src="https://firebasestorage.googleapis.com/v0/b/firma-2a216.appspot.com/o/img%2Fcity.jpg?alt=media&token=e0c2f457-9b6c-4341-a95b-108e29f40bfe" alt="" class="responsive-img materialboxed">
-          </div>
-          <div class="col s12 l6 pull-l5 right-align offset-l1">
-            <h2 class="indigo-text text-darken-4">Cityscapes</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-          </div>
-        </div>
-
-        <div class="row">
-            <div class="col s12 l4">
-              <img src="https://firebasestorage.googleapis.com/v0/b/firma-2a216.appspot.com/o/img%2Fnature.jpg?alt=media&token=c2febce3-bc4f-490f-b1d4-7d44fe8aea55" alt="" class="responsive-img materialboxed">
-            </div>
-            <div class="col s12 l6 offset-l1">
-              <h2 class="indigo-text text-darken-4">Nature</h2>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-            </div>
-          </div>
-    </section>
- 
-
-  <!-- parallax -->
-  <div class="parallax-container">
-    <div class="parallax">
-      <img src="https://firebasestorage.googleapis.com/v0/b/firma-2a216.appspot.com/o/img%2Fcodescreen.png?alt=media&token=9f64138c-63a1-4cb4-8a5c-e0c12427951c" alt="" class="responsive-img">
-    </div>
-  </div>
-
-  <!-- services / tabs -->
-  <section class="container section scrollspy" id="services">
-    <div class="row">
-      <div class="col s12 l4">
-        <h2 class="indigo-trext text-darken-4">What I do...</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-      </div>
-      <div class="col s12 l6 offset-l2">
-        <ul class="tabs">
-          <li class="tab col s6">
-            <a href="#photography" class="indigo-text text-darken-4">Software</a>
-          </li>
-          <li class="tab col s6">
-              <a href="#editing" class="indigo-text text-darken-4">Hardware</a>
-            </li>
-        </ul>
-        <div class="col s12" id="photography">
-          <p class="flow-text indigo-text text-darken-4">Coding</p>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-        </div>
-        <div class="col s12" id="editing">
-            <p class="flow-text indigo-text text-darken-4">Finance</p>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-          </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- parallax -->
-  <div class="parallax-container">
-      <div class="parallax">
-        <img src="https://firebasestorage.googleapis.com/v0/b/firma-2a216.appspot.com/o/img%2Fprocess.jpg?alt=media&token=f74f09ea-0781-49a8-8984-71d25b2ec890" alt="" class="responsive-img">
-      </div>
-    </div>
-
-  <!-- contact form -->
-  <section class="container section scrollspy" >
-      <div class="d-none d-sm-block mb-5 pb-4 scrollspy" id="contact">
-        <div id="map" style="height: 480px;"></div>
-        <script src="./js/map.js"></script>
-        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDpfS1oRGreGSBU5HHjMmQ3o5NLw7VdJ6I&callback=initMap"></script>
-      </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section container scrollspy" >
-    <div class="row">
-      <div class="col s12 l5">
-        <h2 class="indigo-text text-darken-4">Register</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-      </div>
-
-    <!-- Modal Structure -->
-    <div id="confo1">
-      <div id="confo">
-      <div>
-        <p id="thankyou" class="center white-text">Thank you for registering!</p>
-        <p id="thankyou1" class="center white-text">Please check your inbox for the confirmation email.</p>
-      </div>
-      <div id="closeBtn" class="center">
-        <button class="waves-effect waves-green btn-flat">
-            <i class="material-icons white-text">close</i>
-        </button>
-      </div>
-      </div>
-    </div>
-
-    <script src="./js/modal.js"></script>
+<div id="fullpage">
+	<div class="section" id="section0">
 
 
-      <div class="col s12 l5 offset-l2">
-        <form id="contactform" action="">
-          <div class="input-field">
-            <i class="material-icons prefix">email</i>
-            <input name="email" type="email" id="email">
-            <label for="email">your email</label>
-          </div>
-          <div class="input-field">
-              <i class="material-icons prefix">message</i>
-              <textarea name="message" id="message" class="materialize-textarea"></textarea>
-              <label for="message">your message</label>
-            </div>
-            <div class="input-field">
-              <p>Special service...</p>
-              <p>
-                <label>
-                  <input type="checkbox">
-                  <span>Wake-up call</span>
-                </label>
-              </p>
-              <p>
-                <label>
-                  <input type="checkbox">
-                  <span>Massage</span>
-                </label>
-              </p>
-            </div>
-            <div class="input-field center">
-                <button class="btn-large blue lighten-2 waves-effect waves-light" type="submit">Submit
-                    <i class="material-icons right">send</i>
-                </button>
-            </div>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- listen to form -->
-  <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
-  <script src="./js/firedb.js"> </script>
+		<div id="image0">	
+				<img src="./img/fulllogo.png" alt="" class="responsive-img">
+		</div>
+		<div>
+		<h1>We deliver comprehensive software solutions.</h1>
+		<p>Agile development approach.</p>
+		</div>
 
 
- <!-- back to top button -->
-    <div class="fixed-action-btn">
-      <a href="#top" class="btn-floating btn-large blue lighten-3">
-        <i class="large material-icons">arrow_upward</i>
-      </a>
-    </div>
- <!-- ! back to top button -->
+	<div class="hero center">
 
-	<!-- ================ contact section end ================= -->
+			<a class="scroll-link" href="#section1">
+				<svg class="mouse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 130" preserveAspectRatio="xMidYMid meet">
+				<g fill="none" fill-rule="evenodd">
+					<rect width="70" height="118" x="1.5" y="1.5" stroke="#FFF" stroke-width="3" rx="36"/>
+					<circle class="scroll" cx="36.5" cy="31.5" r="4.5" fill="#FFF"/>
+				</g>
+			</svg>
+			</a>
+			
+		</div>
 
- 
-  <footer class="page-footer grey darken-3">
-    <div class="container">
-      <div class="row">
-        <div class="col s12 l6">
-          <h5>About me</h5>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
-        </div>
-        <div class="col s12 l4 offset-l2">
-          <h5>Connect</h5>
-          <ul>
-            <li><a href="#" class="grey-text text-lighten-3">Facebook0</a></li>
-            <li><a href="#" class="grey-text text-lighten-3">Facebook1</a></li>
-            <li><a href="#" class="grey-text text-lighten-3">Facebook2</a></li>
-            <li><a href="#" class="grey-text text-lighten-3">Facebook3</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright grey darken-4">
-      <div class="container center-align">@copy</div>
-    </div>
-  </footer>
+	</div>
 
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-  <script src="./js/timer.js"></script>
-  
-  <script>
-    $(document).ready(function(){
-      $('.sidenav').sidenav();
-      $('.materialboxed').materialbox();
-      $('.parallax').parallax();
-      $('.tabs').tabs();
-      $('.tooltipped').tooltip();
-      $('.scrollspy').scrollSpy();
-      $('.fixed-action-btn').floatingActionButton();
-      $('.modal').modal();
-    });
-  </script>
+	<div class="section" id="section1">
+		<div class="intro">
+
+				<div class="container">
+	
+							<div class="row">
+
+								<div class="col s12 m12 l4" id="competences">
+									<div class="icon-block">
+										<h2 class="center yellow-text text-accent-4"><i class="material-icons">web</i></h2>
+										<h5 class="center white-text">Web app development</h5>
+				
+										<!-- <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p> -->
+									</div>
+								</div>
+				
+								<div class="col s12 m12 l4" id="competences">
+									<div class="icon-block">
+										<h2 class="center yellow-text text-accent-4"><i class="material-icons">phone_iphone</i></h2>
+										<h5 class="center white-text">Mobile app development</h5>
+				
+										<!-- <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users.</p> -->
+									</div>
+								</div>
+				
+								<div class="col s12 m12 l4" id="competences">
+									<div class="icon-block">
+										<h2 class="center yellow-text text-accent-4"><i class="material-icons">settings</i></h2>
+										<h5 class="center white-text">Technology consultancy</h5>
+				
+										<!-- <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p> -->
+									</div>
+								</div>
+
+
+							</div>
+		<div class="col s12" id="techstack">
+				<h5 class="center white-text">Some of the technologies we've mastered</h5>
+				<div class="carousel" >
+					<a class="carousel-item" href="#three!"><img src="./img/react.png"></a>
+					<a class="carousel-item" href="#two!"><img src="./img/nodejs.png"></a>
+						<a class="carousel-item" href="#one!"><img src="./img/rn.png"></a>
+						<a class="carousel-item" href="#eight!"><img src="./img/redux.png"></a>
+						<a class="carousel-item" href="#five!"><img src="./img/aws.png"></a>
+						<a class="carousel-item" href="#four!"><img src="./img/koa.png"></a>
+						<a class="carousel-item" href="#six!"><img src="./img/expo.png"></a>
+						<a class="carousel-item" href="#sixbis!"><img src="./img/mlab.png"></a>
+						<a class="carousel-item" href="#seven!"><img src="./img/expressjs-logo.png"></a>
+						<a class="carousel-item" href="#eleven!"><img src="./img/angular.png"></a>
+						<a class="carousel-item" href="#nine!"><img src="./img/mongodb-logo.png"></a>
+						<a class="carousel-item" href="#ten!"><img src="./img/firebase.png"></a>
+						<a class="carousel-item" href="#elevenbis!"><img src="./img/graphql.png"></a>
+						<a class="carousel-item" href="#eightbis!"><img src="./img/my-sql.png"></a>
+				</div>
+			</div>	
+					</div>
+		</div>
+	</div>
+
+
+	<div class="section" id="section2">
+		<div class="intro">
+
+			<div class="container">
+				<div class="row">
+						<div class="col s12">
+								<h1 class="white-text" id="notsend" style="display: block">Let's stay connected!</h1>
+								<h1 class="lime-text" id="issend" style="display: none">We are exited to get your message!</h1>
+						</div>
+
+						<!-- <div class="col s6 offset-s3">
+							<form id="contactform" action="">
+								<div class="input-field">
+									<i class="material-icons prefix">email</i>
+									<input name="email" type="email" id="email" class="white-text">
+									<label for="email">your email</label>
+								</div>
+								<div class="input-field">
+										<i class="material-icons prefix">message</i>
+										<textarea name="message" id="message" class="materialize-textarea white-text"></textarea>
+										<label for="message">your message</label>
+									</div>
+									<div class="input-field">
+										<!-- <p class="center">Acknowledgements</p> -->
+										<!-- <p class="center">
+											<label>
+												<input type="checkbox">
+												<span id="disclaimer">I've read and accept all site Legal Notice and Privacy Policy.</span>
+											</label>
+										</p>
+									</div>
+									<div class="input-field center">
+											<button class="btn blue lighten waves-effect waves-light" type="submit">Submit
+													<i class="material-icons right">mail</i>
+											</button>
+									</div>
+							</form>
+						</div>  -->
+						<div id="contactmail" >
+								<a href="mailto:contact@rtrealm.com">contact@rtrealm.com</a>
+						</div>
+
+						<div id="contactdets" >
+								<a href="https://www.linkedin.com/company/rtrealm" target="_blank"><img src="./img/In-2C-41px-R.png"></a>
+						</div>
+
+
+						<div class="col s12" id="locations">
+								<div class="col s12 l4">
+									<p id="town">Barcelona</p>
+									<p id="latlong"><i class="material-icons deep-orange-text text-accent-4" id="latlong">location_on</i>(41.397199, 2.160181)</p>
+								</div>
+								<div class="col s12 l4">
+									<p id="town">London</p>
+									<p id="latlong"><i class="material-icons deep-orange-text text-accent-4" id="latlong">location_on</i>(51.519123, -0.173380)</p>
+								</div>
+								<div class="col s12 l4">
+									<p id="town">Warsaw</p>
+									<p id="latlong"><i class="material-icons deep-orange-text text-accent-4" id="latlong">location_on</i>(52.242188, 21.015023)</p>
+								</div>
+						</div>
+						
+
+				</div>
+
+		</div>
+
+
+
+		</div>
+
+		<!-- <script type="text/javascript">
+
+				document.getElementById('contactform').addEventListener('submit', submitForm);
+
+				function submitForm(e) {
+				e.preventDefault();
+				// var email = getInputVal('email');
+				// var message = getInputVal('message');
+				// try - catch...
+				// saveMessage(email, message);
+				document.getElementById('contactform').reset();
+				document.getElementById('notsend').style.display = 'none';
+				document.getElementById('issend').style.display = 'block';
+				}
+		</script> -->
+
+<!-- footer -->
+			<div id="footer">
+				<p class="yellow-text text-accent-4 center">Powered by us! © 2019 Copyright.</p>
+			</div>
+<!-- end of footer-->
+
+	</div>
+</div>
+
+ <!-- to bottom button -->
+
+ <div class="fixed-action-btn">
+		<a href="#3Page" class="btn-floating btn-large pulse yellow accent-4">
+			<i class="large material-icons white-text">chat</i>
+		</a>
+	</div>
+
+<script type="text/javascript" src="./fullPage.js-master/dist/fullpage.js"></script>
+<script type="text/javascript" src="./fullPage.js-master/examples/examples.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+			licenseKey: 'E665CEB2-0DF84290-A1501ECA-9C7E3B49',
+      sectionsColor: ['#2a2831', '#2a2831', '#2a2831'],
+      anchors: ['1Page', '2Page', '3Page'],
+      menu: '#menu',
+      continuousVertical: true,
+      afterLoad: function(anchorLink, index){
+            // console.log("AFTER LOAD - anchorLink:" +anchorLink + " index:" +index );
+        },
+        onLeave: function(index, nextIndex, direction){
+            // console.log("ONLEAVE - index:" +index + " nextIndex:" +nextIndex  + " direction:" + direction);
+
+        },
+		});
+		</script>
+		<script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function() {
+				var elems = document.querySelectorAll('.carousel');
+				var instances = M.Carousel.init(elems, {duration: 100, dist: -50, numVisible: 12, shift: 20});
+				
+				// var instance = M.Carousel.getInstance('.carousel');
+				// instance.next()
+				
+			});
+		</script>
+
+		<script>
+				$('a.scroll-link').click(function(e){
+				e.preventDefault();
+				$id = $(this).attr('href');
+				$('body,html').animate({
+					scrollTop: $($id).offset().top -20
+				}, 750);
+			});
+		</script>
+
 </body>
 </html>
 
