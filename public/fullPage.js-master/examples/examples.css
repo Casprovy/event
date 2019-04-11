@@ -111,7 +111,8 @@ p{
 }
 
 #section1 h5{
-	font-size: 2em;
+	font-size: 150%;
+	text-align: center;
 }
 
 #competences i {
