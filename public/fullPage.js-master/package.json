@@ -34,14 +34,10 @@
     "package.json",
     "README.md"
   ],
-  "authors": [
-    "Alvaro Trigo https://github.com/alvarotrigo"
-  ],
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/alvarotrigo/fullPage.js/issues"
   },
-  "homepage": "https://github.com/alvarotrigo/fullPage.js",
   "namespace": "fullpage_api",
   "devDependencies": {
     "gulp": "^3.9.0",

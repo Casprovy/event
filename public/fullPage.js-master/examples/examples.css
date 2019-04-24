@@ -72,7 +72,6 @@ p{
 }
 
 
-
 #mainname {
 	max-width: 100%;
 }
@@ -95,6 +94,11 @@ p{
 	text-align:center;
 }
 
+@keyframes logoanim {
+	from {opacity: 0;}
+	to {opacity: 100;}
+}
+
 #section0 {
 	text-align: left;
 	padding-left: 5vw;
@@ -104,6 +108,11 @@ p{
 #section0 h1{
 	font-size: 5vh;
 	width: 70%;
+}
+
+#section0 p, #section0 h1, #image0 {
+	animation-name: logoanim;
+	animation-duration: 8s;
 }
 
 #image0 {
@@ -175,6 +184,15 @@ p{
 
 .material-icons {
 	font-size: 5vh;
+}
+
+#compet {
+	-webkit-transition: transform 2s;
+	transition: transform 2s;
+}
+
+#compet:hover {
+	transform: rotate(360deg);
 }
 
 .carousel {
