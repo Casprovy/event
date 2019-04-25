@@ -133,6 +133,10 @@ p{
 	font-size: 2em;
 }
 
+#techstack-text {
+	margin-bottom: 50px;
+}
+
 #section2 h1{
 	font-size: 5vh;
 	margin-bottom: 10vh;
