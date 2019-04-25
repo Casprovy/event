@@ -247,3 +247,12 @@ p{
 	}
 }
 
+
+.mover img {
+	-webkit-transition: transform 2s;
+	transition: transform 2s;
+}
+
+.mover img:hover {
+	transform: rotate(360deg);
+}
