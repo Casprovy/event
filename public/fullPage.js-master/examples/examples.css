@@ -249,9 +249,9 @@ p{
 
 
 .mover img {
-	-ms-transition: transform 2s;
-	-webkit-transition: transform 2s;
-	transition: transform 2s;
+	-ms-transition: transform 1s;
+	-webkit-transition: transform 1s;
+	transition: transform 1s;
 }
 
 .mover img:hover {
