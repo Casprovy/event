@@ -71,7 +71,6 @@ p{
 	font-size: 2em;
 }
 
-
 #mainname {
 	max-width: 100%;
 }
@@ -95,8 +94,13 @@ p{
 }
 
 @keyframes logoanim {
-	from {opacity: 0;}
-	to {opacity: 1;}
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+@keyframes logoanimscale {
+	0% {transform: scale(0.3);}
+	100% {transform: scale(1);}
 }
 
 #section0 {
@@ -104,19 +108,23 @@ p{
 	padding-left: 5vw;
 	padding-right: 5vw;
 }
-
+ 
 #section0 h1{
 	font-size: 5vh;
 	width: 70%;
 }
 
-#section0 p, #section0 h1, #image0 {
+#section0 p, #section0 h1 {
 	animation-name: logoanim;
 	animation-duration: 10s;
 }
 
 #image0 {
-	margin-bottom: 10vw;
+	animation: logoanim 10s, logoanimscale 5s;
+}
+
+#image0 {
+	margin-bottom: 3vw;
 }
 
 #section1 h5{
@@ -247,7 +255,6 @@ p{
 	}
 }
 
-
 .mover img {
 	-ms-transition: transform 1s;
 	-webkit-transition: transform 1s;
@@ -258,3 +265,4 @@ p{
 	/* transform: rotate(360deg); */
 	transform: scale(1.3)
 }
+
