@@ -96,7 +96,7 @@ p{
 
 @keyframes logoanim {
 	from {opacity: 0;}
-	to {opacity: 100;}
+	to {opacity: 1;}
 }
 
 #section0 {
@@ -112,7 +112,7 @@ p{
 
 #section0 p, #section0 h1, #image0 {
 	animation-name: logoanim;
-	animation-duration: 8s;
+	animation-duration: 10s;
 }
 
 #image0 {
@@ -131,6 +131,10 @@ p{
 #techstack h5{
 	padding-top: 7vw;
 	font-size: 2em;
+}
+
+#techstack-text {
+	margin-bottom: 50px;
 }
 
 #section2 h1{
@@ -195,8 +199,37 @@ p{
 	transform: rotate(360deg);
 }
 
-.carousel {
-	background-color: #2a2831;
+.tech-slideshow {
+	display: flex;
+	height: 250px;
+	max-width: 100%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.mover {
+	height: 250px;
+	width: 5000px;
+	position: absolute;
+	overflow-x:hidden;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	flex-flow: row nowrap;
+	animation: moveSlideshow 40s linear infinite;
+	animation-direction: alternate;
+	animation-delay: 2s;
+}
+
+.mover img {
+	margin-left: 160px;
+}
+
+@keyframes moveSlideshow {
+	0% { transform: translateX(0px); }
+	100% { transform: translateX(-3500px); }
 }
 
 @media screen and (min-width: 800px) {
@@ -214,3 +247,14 @@ p{
 	}
 }
 
+
+.mover img {
+	-ms-transition: transform 2s;
+	-webkit-transition: transform 2s;
+	transition: transform 2s;
+}
+
+.mover img:hover {
+	/* transform: rotate(360deg); */
+	transform: scale(1.3)
+}
