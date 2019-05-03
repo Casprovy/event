@@ -42,8 +42,9 @@
 		<div id="fullpage">
 			<div class="section" id="section0">
 				<div>
-					<img id="image0" src="./img/fulllogo.png" alt="" class="responsive-img" />
+					<img id="image0" src="./img/fulllogo_test.svg" alt="" class="responsive-img" />
 				</div>
+
 				<div>
 					<h1>We deliver comprehensive software solutions.</h1>
 					<p>Agile development approach.</p>
@@ -319,6 +320,45 @@
 					750
 				);
 			});
+		</script>
+		<script>
+			var svgElement = document.querySelector('#image0');
+			var maskedElement = document.querySelector('#mask-circle');
+			var circleFeedback = document.querySelector('#circle-shadow');
+			var svgPoint = svgElement.createSVGPoint();
+
+			function cursorPoint(e, svg) {
+				svgPoint.x = e.clientX;
+				svgPoint.y = e.clientY;
+				return svgPoint.matrixTransform(svg.getScreenCTM().inverse());
+			}
+
+			function update(svgCoords) {
+				maskedElement.setAttribute('cx', svgCoords.x);
+				maskedElement.setAttribute('cy', svgCoords.y);
+				circleFeedback.setAttribute('cx', svgCoords.x);
+				circleFeedback.setAttribute('cy', svgCoords.y);
+			}
+
+			window.addEventListener(
+				'mousemove',
+				function(e) {
+					update(cursorPoint(e, svgElement));
+				},
+				false
+			);
+
+			document.addEventListener(
+				'touchmove',
+				function(e) {
+					e.preventDefault();
+					var touch = e.targetTouches[0];
+					if (touch) {
+						update(cursorPoint(touch, svgElement));
+					}
+				},
+				false
+			);
 		</script>
 	</body>
 </html>
