@@ -1,73 +1,110 @@
-@CHARSET "ISO-8859-1";
+@charset "ISO-8859-1";
 /* Reset CSS
  * --------------------------------------- */
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
-form,fieldset,input,textarea,p,blockquote,th,td {
-    padding: 0;
-		margin: 0;
-		font-family: 'Poppins', 'Helvetica', sans-serif;
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+	padding: 0;
+	margin: 0;
+	font-family: 'Poppins', 'Helvetica', sans-serif;
 }
-a{
-	text-decoration:none;
+a {
+	text-decoration: none;
 }
 table {
-    border-spacing: 0;
+	border-spacing: 0;
 }
-fieldset,img {
-    border: 0;
+fieldset,
+img {
+	border: 0;
 }
-address,caption,cite,code,dfn,em,strong,th,var {
-    font-weight: normal;
-    font-style: normal;
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+	font-weight: normal;
+	font-style: normal;
 }
-strong{
+strong {
 	font-weight: bold;
 }
-ol,ul {
-    list-style: none;
-    margin:0;
-    padding:0;
+ol,
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
-caption,th {
-    text-align: left;
-
+caption,
+th {
+	text-align: left;
 }
-h1,h2,h3,h4,h5,h6 {
-    font-weight: normal;
-    font-size: 100%;
-    margin:0;
-    padding:0;
-    color:#FFD600;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	color: #ffd600;
 }
-q:before,q:after {
-    content:'';
+q:before,
+q:after {
+	content: '';
 }
-abbr,acronym { border: 0;
+abbr,
+acronym {
+	border: 0;
 }
-
 
 /* Custom CSS
  * --------------------------------------- */
- @font-face {
-  font-family: LogoFonts;
-  src: url(../../fonts/Vermin\ Vibes\ 4\ Helium.otf);
+@font-face {
+	font-family: LogoFonts;
+	src: url(../../fonts/Vermin\Vibes\4\Helium.otf);
 }
 
-
-body{
+body {
 	font-family: 'Poppins', 'Helvetica', sans-serif;
-	color:white;
+	color: white;
 }
-.wrap{
+.wrap {
 	margin-left: auto;
 	margin-right: auto;
 	width: 960px;
 	position: relative;
 }
-h1{
+h1 {
 	font-size: 6em;
 }
-p{
+p {
 	font-size: 2em;
 }
 
@@ -89,18 +126,26 @@ p{
 	font-size: 2vh;
 	margin: 10px;
 }
-.section{
-	text-align:center;
+.section {
+	text-align: center;
 }
 
 @keyframes logoanim {
-	0% {opacity: 0;}
-	100% {opacity: 1;}
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 @keyframes logoanimscale {
-	0% {transform: scale(0.3);}
-	100% {transform: scale(1);}
+	0% {
+		transform: scale(0.3);
+	}
+	100% {
+		transform: scale(1);
+	}
 }
 
 #section0 {
@@ -108,13 +153,14 @@ p{
 	padding-left: 5vw;
 	padding-right: 5vw;
 }
- 
-#section0 h1{
+
+#section0 h1 {
 	font-size: 5vh;
 	width: 70%;
 }
 
-#section0 p, #section0 h1 {
+#section0 p,
+#section0 h1 {
 	animation-name: logoanim;
 	animation-duration: 10s;
 }
@@ -127,7 +173,7 @@ p{
 	margin-bottom: 3vw;
 }
 
-#section1 h5{
+#section1 h5 {
 	font-size: 150%;
 	text-align: center;
 }
@@ -136,7 +182,7 @@ p{
 	font-size: 5em;
 }
 
-#techstack h5{
+#techstack h5 {
 	padding-top: 7vw;
 	font-size: 2em;
 }
@@ -145,12 +191,12 @@ p{
 	margin-bottom: 50px;
 }
 
-#section2 h1{
+#section2 h1 {
 	font-size: 5vh;
 	margin-bottom: 10vh;
 }
 
-#section2 p{
+#section2 p {
 	font-size: 2vh;
 }
 
@@ -175,9 +221,9 @@ p{
 	margin-top: 4vh;
 }
 
-#contactmail a{
+#contactmail a {
 	font-size: 2.5vh;
-	color:#FFD600;
+	color: #ffd600;
 }
 
 #footer {
@@ -186,7 +232,7 @@ p{
 	bottom: 3em;
 }
 
-#footer p{
+#footer p {
 	font-size: 1.3vh;
 }
 
@@ -220,7 +266,7 @@ p{
 	height: 250px;
 	width: 5000px;
 	position: absolute;
-	overflow-x:hidden;
+	overflow-x: hidden;
 	top: 0;
 	left: 0;
 	display: flex;
@@ -228,7 +274,7 @@ p{
 	flex-flow: row nowrap;
 	animation: moveSlideshow 40s linear infinite;
 	animation-direction: alternate;
-	animation-delay: 2s;
+	animation-delay: 3s;
 }
 
 .mover img {
@@ -236,19 +282,23 @@ p{
 }
 
 @keyframes moveSlideshow {
-	0% { transform: translateX(0px); }
-	100% { transform: translateX(-3500px); }
+	0% {
+		transform: translateX(0px);
+	}
+	100% {
+		transform: translateX(-3500px);
+	}
 }
 
 @media screen and (min-width: 800px) {
-  #techstack {
-    display: inline;
-  }
+	#techstack {
+		display: inline;
+	}
 }
 
 @media screen and (max-width: 801px) {
-  #techstack {
-    display: none;
+	#techstack {
+		display: none;
 	}
 	#competences {
 		margin-bottom: 15vw;
@@ -262,7 +312,5 @@ p{
 }
 
 .mover img:hover {
-	/* transform: rotate(360deg); */
-	transform: scale(1.3)
+	transform: scale(1.3);
 }
-
