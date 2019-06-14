@@ -303,6 +303,9 @@ p {
 	#competences {
 		margin-bottom: 15vw;
 	}
+	#partners {
+		display: none;
+	}
 }
 
 .mover img {
