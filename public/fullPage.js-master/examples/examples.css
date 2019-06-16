@@ -187,6 +187,15 @@ p {
 	font-size: 2em;
 }
 
+#partners h5 {
+	padding-top: 3vw;
+	font-size: 2em;
+}
+
+#partners img {
+	transform: scale(0.7);
+}
+
 #techstack-text {
 	margin-bottom: 50px;
 }
