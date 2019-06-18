@@ -187,6 +187,15 @@ p {
 	font-size: 2em;
 }
 
+#partners h5 {
+	padding-top: 3vw;
+	font-size: 1.7em;
+}
+
+#partners img {
+	transform: scale(0.6);
+}
+
 #techstack-text {
 	margin-bottom: 50px;
 }
@@ -312,5 +321,15 @@ p {
 }
 
 .mover img:hover {
-	transform: scale(1.3);
+	transform: scale(1.2);
+}
+
+#partners img {
+	-ms-transition: transform 1s;
+	-webkit-transition: transform 1s;
+	transition: transform 1s;
+}
+
+#partners img:hover {
+	transform: scale(0.7);
 }
