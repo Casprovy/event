@@ -189,7 +189,7 @@ p {
 
 #partners h5 {
 	padding-top: 3vw;
-	font-size: 1.8em;
+	font-size: 1.7em;
 }
 
 #partners img {
@@ -328,7 +328,7 @@ p {
 }
 
 .mover img:hover {
-	transform: scale(1.3);
+	transform: scale(1.2);
 }
 
 #partners img {
@@ -338,5 +338,5 @@ p {
 }
 
 #partners img:hover {
-	transform: scale(0.8);
+	transform: scale(0.7);
 }
