@@ -200,6 +200,10 @@ p {
 	margin-bottom: 50px;
 }
 
+#partners-text {
+	margin-bottom: 25px;
+}
+
 #section2 h1 {
 	font-size: 5vh;
 	margin-bottom: 10vh;
@@ -311,6 +315,9 @@ p {
 	}
 	#competences {
 		margin-bottom: 15vw;
+	}
+	#partners {
+		display: none;
 	}
 }
 
