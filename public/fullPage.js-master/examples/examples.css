@@ -253,6 +253,10 @@ p {
 	margin: 10px;
 }
 
+.icon-block-compet {
+	margin: 0px;
+}
+
 .material-icons {
 	font-size: 5vh;
 }
@@ -317,6 +321,9 @@ p {
 		margin-bottom: 15vw;
 	}
 	#partners {
+		display: none;
+	}
+	#section11 {
 		display: none;
 	}
 }

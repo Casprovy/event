@@ -40,6 +40,7 @@
           <p>Agile development approach.</p>
         </div>
 
+        <!--
         <div class="hero center">
           <a class="scroll-link" href="#section1">
             <svg class="mouse" preserveaspectratio="xMidYMid meet" viewbox="0 0 76 130" xmlns="http://www.w3.org/2000/svg">
@@ -50,6 +51,8 @@
             </svg>
           </a>
         </div>
+      -->
+
       </div>
 
       <div class="section" id="section1">
@@ -148,51 +151,40 @@
           <div class="container">
             <div class="row" style="display: flex; align-items: center">
               <div class="col s4" id="competences">
-                <div class="icon-block">
+                <div class="icon-block-compet">
                   <a href="#img"><img height="80px" src="../../references/BNPParibas.png" width="250px"/></a>
                 </div>
-                <div class="icon-block">
+                <div class="icon-block-compet">
                   <a href="#img"><img height="70px" src="../../references/bp2s.png" width="280px"/></a>
                 </div>
-
-                <div class="icon-block">
+                <div class="icon-block-compet">
                   <a href="#img"><img height="150px" src="../../references/henkel.png" width="150px"/></a>
                 </div>
-
-                <div class="icon-block">
-                  <a href="#img"><img height="50px" src="../../references/taurus.png" width="280px"/></a>
+                <div class="icon-block-compet">
+                  <a href="#img"><img height="40px" src="../../references/taurus.png" width="200px"/></a>
                 </div>
-
-                <div class="icon-block">
-                  <a href="#img"><img height="120px" src="../../references/redsandLabs.png" width="120px" /></a>
+                <div class="icon-block-compet">
+                  <a href="#img"><img height="110px" src="../../references/redsandLabs.png" width="110px"/></a>
                 </div>
-
-                <div class="icon-block">
-                  <a href="#img"><img height="80px" src="../../references/dataspan.png" width="105px" /></a>
+                <div class="icon-block-compet">
+                  <a href="#img"><img height="80px" src="../../references/dataspan.png" width="105px"/></a>
                 </div>
-
-                <div class="icon-block">
-                  <a href="#img"><img height="50px" src="../../references/be.png" width="130px" /></a>
+                <div class="icon-block-compet">
+                  <a href="#img"><img height="50px" src="../../references/be.png" width="130px"/></a>
                 </div>
-
-                <div class="icon-block">
-                  <a href="#img"><img height="50px" src="../../references/neoprof.png" width="270px" /></a>
-                </div>
-
-              </div>
-
-              <div class="col s6 offset-s1" id="competences">
-                <div class="icon-block">
-                
-                  
-                  <h5 class="center black-text">Outsourcing</h5>
-                  
+                <div class="icon-block-compet">
+                  <a href="#img"><img height="50px" src="../../references/neoprof.png" width="270px"/></a>
                 </div>
               </div>
-              
+
+              <div class="col s7 offset-s1" id="competences">
+                <div class="icon-block-compet">
+                  <h5 class="left-align black-text">We put our clients interests at the center of what we do. <br> Each day we develop our competences and master new technologies to make sure we deliver our clients the best solutions possible.</h5>
+                </div>
+              </div>
             </div>
           </div>
-        </div>  
+        </div>
       </div>
 
       <div class="section" id="section2">
@@ -247,7 +239,7 @@
 
     <!-- to bottom button -->
     <div class="fixed-action-btn">
-      <a class="btn-floating btn-large pulse yellow accent-4" href="#3Page">
+      <a class="btn-floating btn-large pulse yellow accent-4" href="#4Page">
         <i class="large material-icons white-text">chat</i>
       </a>
     </div>
@@ -267,7 +259,7 @@
           "1Page", "2Page", "3Page", "4Page"
         ],
         menu: "#menu",
-        continuousVertical: true,
+        continuousVertical: false,
         afterLoad: function (anchorLink, index) { // console.log("AFTER LOAD - anchorLink:" +anchorLink + " index:" +index );
         },
         onLeave: function (index, nextIndex, direction) { // console.log("ONLEAVE - index:" +index + " nextIndex:" +nextIndex  + " direction:" + direction);
@@ -295,7 +287,7 @@
 				$id = $(this).attr('href');
 				$('body,html').animate(
 					{
-						scrollTop: $($id).offset().top - 20
+						scrollTop: $($id).offset().top-0
 					},
 					750
 				);
