@@ -359,8 +359,7 @@ p {
 	transform: scale(0.7);
 }
 
-/* mouse scroller 1Page */
-
+/*------ mouse scroller 1Page ------*/
 .scroll-downs {
 	position: absolute;
 	left: 50%;
