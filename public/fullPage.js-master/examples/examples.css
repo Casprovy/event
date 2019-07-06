@@ -93,7 +93,7 @@ acronym {
 
 body {
 	font-family: 'Poppins', 'Helvetica', sans-serif;
-	color: white;
+	color: #e0e0e0;
 }
 .wrap {
 	margin-left: auto;
@@ -126,6 +126,19 @@ p {
 	font-size: 2vh;
 	margin: 10px;
 }
+
+.credentials h5 {
+	font-size: 2.2vw;
+	margin-bottom: 60px;
+}
+
+.credentials h6 {
+	font-size: 1.1vw;
+	text-align: justify;
+	text-justify: inter-word;
+	line-height: 1.3vw;
+}
+
 .section {
 	text-align: center;
 }
@@ -160,7 +173,8 @@ p {
 }
 
 #section0 p,
-#section0 h1 {
+#section0 h1,
+#section0 .scroll-downs {
 	animation-name: logoanim;
 	animation-duration: 10s;
 }
@@ -204,12 +218,12 @@ p {
 	margin-bottom: 25px;
 }
 
-#section2 h1 {
+#section3 h1 {
 	font-size: 5vh;
 	margin-bottom: 10vh;
 }
 
-#section2 p {
+#section3 p {
 	font-size: 2vh;
 }
 
@@ -251,6 +265,10 @@ p {
 
 .icon-block {
 	margin: 10px;
+}
+
+.credentials {
+	margin: 0px;
 }
 
 .material-icons {
@@ -299,7 +317,7 @@ p {
 		transform: translateX(0px);
 	}
 	100% {
-		transform: translateX(-3500px);
+		transform: translateX(-3750px);
 	}
 }
 
@@ -310,13 +328,13 @@ p {
 }
 
 @media screen and (max-width: 801px) {
-	#techstack {
-		display: none;
-	}
 	#competences {
 		margin-bottom: 15vw;
 	}
-	#partners {
+	#section2,
+	#techstack,
+	#partners,
+	.scroll-downs {
 		display: none;
 	}
 }
@@ -339,4 +357,41 @@ p {
 
 #partners img:hover {
 	transform: scale(0.7);
+}
+
+/*------ mouse scroller 1Page ------*/
+.scroll-downs {
+	position: absolute;
+	left: 50%;
+	bottom: 5vh;
+}
+.mousey {
+	width: 3px;
+	padding: 5px 10px;
+	height: 30px;
+	border: 2px solid #fff;
+	border-radius: 25px;
+	opacity: 0.75;
+	box-sizing: content-box;
+}
+.scroller {
+	width: 3px;
+	height: 5px;
+	border-radius: 25%;
+	background-color: #ffffff;
+	animation-name: scroll;
+	animation-duration: 2s;
+	animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+	animation-iteration-count: infinite;
+}
+@keyframes scroll {
+	0% {
+		opacity: 1;
+	}
+	10% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
 }
