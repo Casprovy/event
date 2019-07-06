@@ -160,7 +160,8 @@ p {
 }
 
 #section0 p,
-#section0 h1 {
+#section0 h1,
+.scroll-downs {
 	animation-name: logoanim;
 	animation-duration: 10s;
 }
@@ -314,16 +315,13 @@ p {
 }
 
 @media screen and (max-width: 801px) {
-	#techstack {
-		display: none;
-	}
 	#competences {
 		margin-bottom: 15vw;
 	}
-	#partners {
-		display: none;
-	}
-	#section11 {
+	#section2,
+	#techstack,
+	#partners,
+	.scroll-downs {
 		display: none;
 	}
 }
@@ -346,4 +344,44 @@ p {
 
 #partners img:hover {
 	transform: scale(0.7);
+}
+
+/* mouse scroller 1Page */
+
+.scroll-downs {
+	position: absolute;
+	left: 50%;
+	bottom: 5vh;
+}
+.mousey {
+	width: 3px;
+	padding: 5px 10px;
+	height: 30px;
+	border: 1.5px solid #fff;
+	border-radius: 20px;
+	opacity: 0.75;
+	box-sizing: content-box;
+}
+.scroller {
+	width: 3px;
+	height: 3px;
+	border-radius: 25%;
+	background-color: #ffffff;
+	animation-name: scroll;
+	animation-duration: 2.2s;
+	animation-timing-function: cubic-bezier(0.15, 0.41, 0.69, 0.94);
+	animation-iteration-count: infinite;
+}
+@keyframes scroll {
+	0% {
+		opacity: 1;
+	}
+	10% {
+		transform: translateY(3px);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(6px);
+		opacity: 1;
+	}
 }
