@@ -376,7 +376,7 @@ p {
 }
 .scroller {
 	width: 3px;
-	height: 5px;
+	height: 3px;
 	border-radius: 25%;
 	background-color: #ffffff;
 	animation-name: scroll;
@@ -386,7 +386,7 @@ p {
 }
 @keyframes scroll {
 	0% {
-		opacity: 1;
+		opacity: 0;
 	}
 	10% {
 		opacity: 1;
