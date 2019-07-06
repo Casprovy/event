@@ -173,8 +173,12 @@ p {
 }
 
 #section0 p,
-#section0 h1,
 #section0 .scroll-downs {
+	animation-name: logoanim;
+	animation-duration: 10s;
+}
+
+#section0 h1 {
 	animation-name: logoanim;
 	animation-duration: 10s;
 }
