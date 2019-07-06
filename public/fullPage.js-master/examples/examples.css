@@ -93,7 +93,7 @@ acronym {
 
 body {
 	font-family: 'Poppins', 'Helvetica', sans-serif;
-	color: white;
+	color: #e0e0e0;
 }
 .wrap {
 	margin-left: auto;
@@ -204,12 +204,12 @@ p {
 	margin-bottom: 25px;
 }
 
-#section2 h1 {
+#section3 h1 {
 	font-size: 5vh;
 	margin-bottom: 10vh;
 }
 
-#section2 p {
+#section3 p {
 	font-size: 2vh;
 }
 
