@@ -126,6 +126,18 @@ p {
 	font-size: 2vh;
 	margin: 10px;
 }
+
+.credentials h5 {
+	font-size: 2vw;
+	margin-left: 10px;
+	margin-bottom: 30px;
+}
+
+.credentials h6 {
+	font-size: 1vw;
+	margin: 10px;
+}
+
 .section {
 	text-align: center;
 }
