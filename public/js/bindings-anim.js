@@ -239,7 +239,7 @@ function goMovie() {
 	if (can_w <= 800) {
 		initBalls(15);
 	} else {
-		initBalls(100);
+		initBalls(30);
 	}
 	window.requestAnimationFrame(render);
 }
