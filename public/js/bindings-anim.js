@@ -166,7 +166,6 @@ function renderLines() {
 
 				ctx.strokeStyle = 'rgba(150,150,150,' + alpha + ')';
 				ctx.lineWidth = link_line_width;
-
 				ctx.beginPath();
 				ctx.moveTo(balls[i].x, balls[i].y);
 				ctx.lineTo(balls[j].x, balls[j].y);
@@ -197,13 +196,9 @@ function addBallIfy() {
 // Render
 function render() {
 	ctx.clearRect(0, 0, can_w, can_h);
-
 	renderBalls();
-
 	renderLines();
-
 	updateBalls();
-
 	addBallIfy();
 
 	window.requestAnimationFrame(render);
@@ -253,12 +248,10 @@ goMovie();
 
 // Mouse effect
 canvas.addEventListener('mouseenter', function() {
-	console.log('mouseenter');
 	mouse_in = true;
 	balls.push(mouse_ball);
 });
 canvas.addEventListener('mouseleave', function() {
-	console.log('mouseleave');
 	mouse_in = false;
 	var new_balls = [];
 	Array.prototype.forEach.call(balls, function(b) {
