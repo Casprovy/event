@@ -187,7 +187,7 @@ function getDisOf(b1, b2) {
 
 // add balls if there a little balls
 function addBallIfy() {
-	if (balls.length < 70) {
+	if (balls.length < 30) {
 		balls.push(getRandomBall());
 	}
 }
