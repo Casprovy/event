@@ -236,7 +236,11 @@ window.addEventListener('resize', function(e) {
 
 function goMovie() {
 	initCanvas();
-	initBalls(100);
+	if (can_w <= 800) {
+		initBalls(15);
+	} else {
+		initBalls(100);
+	}
 	window.requestAnimationFrame(render);
 }
 goMovie();
