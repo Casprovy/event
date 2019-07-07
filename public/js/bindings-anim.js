@@ -187,7 +187,9 @@ function getDisOf(b1, b2) {
 
 // add balls if there a little balls
 function addBallIfy() {
-	if (balls.length < 70) {
+	if (can_w <= 800 && balls.length < 15) {
+		balls.push(getRandomBall());
+	} else if (can_w > 800 && balls.length < 70) {
 		balls.push(getRandomBall());
 	}
 }
@@ -232,11 +234,19 @@ function initCanvas() {
 window.addEventListener('resize', function(e) {
 	console.log('Window Resize...');
 	initCanvas();
+	goMovie();
 });
 
 function goMovie() {
 	initCanvas();
-	initBalls(100);
+	console.log('can_w:', can_w);
+	if (can_w <= 800) {
+		console.log('init balls 15');
+		initBalls(20);
+	} else {
+		console.log('init balls 100');
+		initBalls(100);
+	}
 	window.requestAnimationFrame(render);
 }
 goMovie();
