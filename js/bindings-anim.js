@@ -3,8 +3,6 @@ var canvas = document.getElementById('nokey'),
 	can_h = parseInt(canvas.getAttribute('height')),
 	ctx = canvas.getContext('2d');
 
-// console.log(typeof can_w);
-
 var ball = {
 		x: 0,
 		y: 0,
@@ -15,9 +13,9 @@ var ball = {
 		phase: 0
 	},
 	ball_color = {
-		r: 207,
+		r: 255,
 		g: 255,
-		b: 4
+		b: 255
 	},
 	R = 2,
 	balls = [],
@@ -148,7 +146,6 @@ function updateBalls() {
 		// alpha change
 		b.phase += alpha_f;
 		b.alpha = Math.abs(Math.cos(b.phase));
-		// console.log(b.alpha);
 	});
 
 	balls = new_balls.slice(0);
@@ -265,5 +262,4 @@ canvas.addEventListener('mousemove', function(e) {
 	var e = e || window.event;
 	mouse_ball.x = e.pageX;
 	mouse_ball.y = e.pageY;
-	// console.log(mouse_ball);
 });
