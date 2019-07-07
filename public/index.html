@@ -3,9 +3,7 @@
   <head>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-
     <title>Agile development approach.</title>
-
     <meta content="" name="author"/>
     <meta content="We deliver comprehensive software solutions. Contact us if you're looking for a reliable partner in your development process." name="description"/>
     <meta content="web, software, agile, mobile, app, fullstack, javascript, shopify" name="keywords"/>
@@ -13,7 +11,6 @@
     <meta content="Agile development approach." property="og:title"/>
     <meta content="We deliver comprehensive software solutions. Contact us if you're looking for a reliable partner in your development process." property="og:description"/>
     <meta content="website" property="og:type"/>
-
     <link
     href="https://firebasestorage.googleapis.com/v0/b/landing-page-489b7.appspot.com/o/favico.png?alt=media&token=b16ffb75-6ef8-4196-bcaf-e15c0bdfb914" rel="icon"/>
 
@@ -23,7 +20,6 @@
     href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <!-- Compiled and minified CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css" rel="stylesheet"/>
-
     <link href="./fullPage.js-master/dist/fullpage.css" rel="stylesheet" type="text/css"/>
     <link href="./fullPage.js-master/examples/examples.css" rel="stylesheet" type="text/css"/>
     <link href="./fullPage.js-master/examples/mouse.css" rel="stylesheet" type="text/css"/>
@@ -32,23 +28,26 @@
     <div id="fullpage">
 
       <div class="section" id="section0">
-        <div>
-          <img alt="logo" class="responsive-img" id="image0" src="https://firebasestorage.googleapis.com/v0/b/landing-page-489b7.appspot.com/o/fulllogo.png?alt=media&token=03709b6d-6ecb-4bea-8d30-b6fb7dcb92c2"/>
-        </div>
 
-        <div>
-          <h1>We deliver comprehensive software solutions.</h1>
-          <p>Agile development approach.</p>
+        <canvas id="nokey"></canvas>
+
+        <div class="overlay">
+          <div>
+            <img alt="logo" class="responsive-img" id="image0" src="https://firebasestorage.googleapis.com/v0/b/landing-page-489b7.appspot.com/o/fulllogo.png?alt=media&token=03709b6d-6ecb-4bea-8d30-b6fb7dcb92c2"/>
+          </div>
+          <div>
+            <h1>{ we deliver comprehensive software solutions }</h1>
+            <h2 style="color: white">Agile development approach.</h2>
+          </div>
         </div>
 
         <div class="scroll-downs">
-            <a href="#2Page">
-              <div class="mousey">
-               <div class="scroller"></div>
-              </div>
-            </a>
+          <a href="#2Page">
+            <div class="mousey">
+              <div class="scroller"></div>
+            </div>
+          </a>
         </div>
-      
       </div>
 
       <div class="section" id="section1">
@@ -184,7 +183,8 @@
         </div>
       </div>
 
-      <div class="section" id="section3">
+
+      <div class="section" id="section4">
         <div class="intro">
           <div class="container">
             <div class="row">
@@ -234,61 +234,21 @@
       </div>
     </div>
 
-    <!-- to bottom button -->
+    <!-- contact button -->
     <div class="fixed-action-btn">
       <a class="btn-floating btn-large pulse yellow accent-4" href="#4Page">
         <i class="large material-icons white-text">chat</i>
       </a>
     </div>
+    <!-- end contact button -->
 
     <script src="./fullPage.js-master/dist/fullpage.js" type="text/javascript"></script>
     <script src="./fullPage.js-master/examples/examples.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
 
-    <script type="text/javascript">
-      var myFullpage = new fullpage("#fullpage", {
-        licenseKey: "E665CEB2-0DF84290-A1501ECA-9C7E3B49",
-        sectionsColor: [
-          "#2a2831", "#2a2831", "#ffffff", "#2a2831"
-        ],
-        anchors: [
-          "1Page", "2Page", "3Page", "4Page"
-        ],
-        menu: "#menu",
-        continuousVertical: true,
-        afterLoad: function (anchorLink, index) { // console.log("AFTER LOAD - anchorLink:" +anchorLink + " index:" +index );
-        },
-        onLeave: function (index, nextIndex, direction) { // console.log("ONLEAVE - index:" +index + " nextIndex:" +nextIndex  + " direction:" + direction);
-        }
-      });
-    </script>
-    <script type="text/javascript">
-      document.addEventListener("DOMContentLoaded", function () {
-        var elems = document.querySelectorAll(".carousel");
-        var instances = M.Carousel.init(elems, {
-          duration: 100,
-          dist: -50,
-          numVisible: 12,
-          shift: 20,
-          indicators: true
-        });
-
-        // var instance = M.Carousel.getInstance('.carousel');
-        // instance.next()
-      });
-    </script>
-    <script>
-			$('a.scroll-link').click(function(e) {
-				e.preventDefault();
-				$id = $(this).attr('href');
-				$('body,html').animate(
-					{
-						scrollTop: $($id).offset().top-0
-					},
-					750
-				);
-			});
-		</script>
+    <script src="../js/fullpage.js" type="text/javascript"></script>
+    <script src="../js/carousel.js" type="text/javascript"></script>
+    <script src="../js/bindings-anim.js" type="text/javascript"></script>
   </body>
 </html>
