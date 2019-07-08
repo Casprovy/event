@@ -387,7 +387,7 @@ p {
 .scroll-downs {
 	position: absolute;
 	left: 50%;
-	bottom: 5vh;
+	bottom: 3vw;
 }
 .mousey {
 	width: 3px;
