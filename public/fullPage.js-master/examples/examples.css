@@ -206,22 +206,22 @@ p {
 }
 
 #section1 h5 {
-	font-size: 150%;
+	font-size: 1.5rem;
 	text-align: center;
 }
 
 #competences i {
-	font-size: 5em;
+	font-size: 5rem;
 }
 
 #techstack h5 {
-	padding-top: 7vw;
-	font-size: 2em;
+	padding-top: 5rem;
+	font-size: 2rem;
 }
 
 #partners h5 {
 	padding-top: 3vw;
-	font-size: 1.7em;
+	font-size: 1.7rem;
 }
 
 #partners img {
@@ -229,11 +229,11 @@ p {
 }
 
 #techstack-text {
-	margin-bottom: 50px;
+	margin-bottom: 3vw;
 }
 
 #partners-text {
-	margin-bottom: 25px;
+	margin-bottom: 1rem;
 }
 
 #section4 h1 {
@@ -387,7 +387,7 @@ p {
 .scroll-downs {
 	position: absolute;
 	left: 50%;
-	bottom: 3vw;
+	bottom: 3rem;
 }
 .mousey {
 	width: 3px;
