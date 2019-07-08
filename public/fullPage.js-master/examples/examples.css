@@ -206,7 +206,7 @@ p {
 }
 
 #section1 h5 {
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	text-align: center;
 }
 
@@ -215,12 +215,12 @@ p {
 }
 
 #techstack h5 {
-	padding-top: 5rem;
+	padding-top: 15vh;
 	font-size: 2rem;
 }
 
 #partners h5 {
-	padding-top: 3rem;
+	padding-top: 5vh;
 	font-size: 1.7rem;
 }
 
