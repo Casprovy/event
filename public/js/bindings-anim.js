@@ -234,7 +234,9 @@ function initCanvas() {
 window.addEventListener('resize', function(e) {
 	console.log('Window Resize...');
 	initCanvas();
-	goMovie();
+	if (balls.length < 100) {
+		goMovie();
+	}
 });
 
 function goMovie() {
