@@ -441,11 +441,6 @@ canvas {
 	z-index: 0;
 }
 
-/* *{
-              -webkit-box-sizing: border-box;
-              box-sizing: border-box;
-          } */
-
 @media screen and (max-height: 1000px) and (min-width: 1000px) {
 	#scalable {
 		transform: scale(0.7);
