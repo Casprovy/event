@@ -215,12 +215,12 @@ p {
 }
 
 #techstack h5 {
-	padding-top: 15vh;
+	margin-top: 15vh;
 	font-size: 2rem;
 }
 
 #partners h5 {
-	padding-top: 5vh;
+	margin-top: 8vh;
 	font-size: 1.7rem;
 }
 
@@ -229,7 +229,7 @@ p {
 }
 
 #techstack-text {
-	margin-bottom: 3vw;
+	margin-bottom: 3vh;
 }
 
 #partners-text {
@@ -445,3 +445,12 @@ canvas {
               -webkit-box-sizing: border-box;
               box-sizing: border-box;
           } */
+
+@media screen and (max-height: 1000px) {
+	#scalable {
+		transform: scale(0.7);
+	}
+	#competences scalable {
+		transform: scale(0.9);
+	}
+}
