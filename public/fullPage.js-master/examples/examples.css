@@ -446,7 +446,7 @@ canvas {
               box-sizing: border-box;
           } */
 
-@media screen and (max-height: 1000px) and (min-width: 1500px) {
+@media screen and (max-height: 1000px) and (min-width: 1000px) {
 	#scalable {
 		transform: scale(0.7);
 	}
