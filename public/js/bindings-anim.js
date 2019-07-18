@@ -63,7 +63,7 @@ function randomArrayItem(arr) {
 function randomNumFrom(min, max) {
 	return Math.random() * (max - min) + min;
 }
-console.log('random number:', randomNumFrom(0, 10));
+// console.log('random number:', randomNumFrom(0, 10));
 // Random Ball
 function getRandomBall() {
 	var pos = randomArrayItem(['top', 'right', 'bottom', 'left']);
@@ -232,21 +232,21 @@ function initCanvas() {
 	can_h = parseInt(canvas.getAttribute('height'));
 }
 window.addEventListener('resize', function(e) {
-	console.log('Window Resize...');
+	// console.log('Window Resize...');
 	initCanvas();
-	if (balls.length < 100) {
+	if (balls.length < 50) {
 		goMovie();
 	}
 });
 
 function goMovie() {
 	initCanvas();
-	console.log('can_w:', can_w);
+	// console.log('can_w:', can_w);
 	if (can_w <= 800) {
-		console.log('init balls 15');
+		// console.log('init balls 15');
 		initBalls(20);
 	} else {
-		console.log('init balls 100');
+		// console.log('init balls 100');
 		initBalls(100);
 	}
 	window.requestAnimationFrame(render);

@@ -11,3 +11,5 @@ var myFullpage = new fullpage('#fullpage', {
 		// console.log("ONLEAVE - index:" +index + " nextIndex:" +nextIndex  + " direction:" + direction);
 	}
 });
+
+console.log('%cNICE TO SEE YOU!', 'font-size: 20px; ; color: #ffd600');
