@@ -170,7 +170,7 @@
 				fixedElements: null,
 				responsive: 0, //backwards compabitility with responsiveWiddth
 				responsiveWidth: 900,
-				responsiveHeight: 1000,
+				responsiveHeight: 900,
 				responsiveSlides: false,
 				parallax: false,
 				parallaxOptions: {
