@@ -442,9 +442,9 @@ canvas {
 }
 
 @media screen and (max-height: 1000px) and (min-width: 1000px) {
-	#scalable {
+	/* #scalable {
 		transform: scale(0.7);
-	}
+	} */
 	#competences scalable {
 		transform: scale(0.9);
 	}
